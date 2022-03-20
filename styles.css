@@ -1,0 +1,17 @@
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    background-color: rgb(248, 184, 7);
+    color: white;
+    padding: 30px;
+    position: absolute;
+    left: 0px;
+    top: 30%;
+}
+.banner h2{
+    font-size: 70px;
+}
