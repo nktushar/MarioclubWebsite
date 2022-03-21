@@ -114,3 +114,129 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
+/* Psudo Classes*/
+nav li a:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+form input:focus{
+    border: 3px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 3px solid greenyellow;
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* section.join p::first-letter{
+    font-size: 1.3em;
+} */
+p::selection{
+    background-color: #f63232;
+    color: white;
+}
+p::after{
+    content: '...';
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1100px){
+
+    .banner .welcome h2{
+       font-size: 50px;
+    }
+    nav li{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 850px){
+
+    .banner .welcome h2{
+       font-size: 30px;
+    }
+    nav li{
+        font-size: 16px;
+    }
+    header{
+        padding: 10px;
+    }
+    nav{
+        top: 84px;
+    }
+
+}
+@media screen and (max-width: 640px){
+
+    
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+
+}
+@media screen and (max-width: 550px){
+
+    .banner .welcome h2{
+        font-size: 25px;
+     }
+    .banner .welcome{
+       position: relative;
+       text-align: center;
+       padding: 15px;
+    }
+    nav li{
+        font-size: 14px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+}
+@media screen and (max-width: 440px){
+
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+     }
+    .banner .welcome h2{
+       font-size: 20px;
+    }
+    nav li{
+        font-size: 12px;
+    }
+    .images li{
+        width: 100%;
+        margin: 16px auto;
+        display: block;
+    }
+
+}
+@media screen and (max-width: 370px){
+
+   nav li{
+       font-size: 15px;
+       display: block;
+       width: 100%;
+       margin: 10px 0;
+   }
+   /* header{
+       position: relative;
+   } */
+
+}
